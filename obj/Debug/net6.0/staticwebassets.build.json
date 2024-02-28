@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eY1R6WwBiYK01MT/K4pqDBJftdKdDEBCtEZ4hcBUKT0=",
+  "Source": "BaiTapApi",
+  "BasePath": "_content/BaiTapApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
