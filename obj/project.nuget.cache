@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GEFS2axR6LM6hgH7sCDMfbkLL/LMRnrpUekK4LeqqRN8cV+J8CB3TF1mwbUzT69i4oSOQF7DQT9X5NFHjnnREA==",
+  "dgSpecHash": "FWZwUEBr2ydnpWfuD+S23DSQ0mak/knLZmmEI2+8P8u7aEYjPT5GYGx1PFGHjWe5+/IgpXiHd8YoRfmuaIC7kA==",
   "success": true,
-  "projectFilePath": "F:\\HocLTS\\BaiTapApi\\BaiTapApi\\THucTapBE.csproj",
+  "projectFilePath": "F:\\HocLTS\\BaiTapApi\\BaiTapApi\\BaiTapApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MSI\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

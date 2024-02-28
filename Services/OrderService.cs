@@ -18,7 +18,7 @@ namespace BaiTapApi.Services
 
         public IEnumerable<Order> GetOrders()
         {
-            return dbContext.Order.Include(x=>x.user).Include(x=>x.orderStatus).Include(x=>x.orderDetails).Include(x=>x.orderDetails).ThenInclude(x=>x.product).AsNoTracking().AsQueryable();
+            return dbContext.Order.AsQueryable();
         }
 
         public IQueryable<Order> LayOrderTheoDieuKien(string? keyword, int? year = null, int? month = null, DateTime? tuNgay = null, DateTime? DenNgay = null, double? TuGia = null, double? DenGia = null)
@@ -62,8 +62,8 @@ namespace BaiTapApi.Services
             {
                 return ErrorHelper.ThatBai;
             }
-            var OrderHienTai = dbContext.Order.Include(o => o.orderDetails).FirstOrDefault(x => x.OrderId == order.OrderId);
-
+            var OrderHienTai = dbContext.Order.FirstOrDefault(x => x.OrderId == order.OrderId);
+            
             if (OrderHienTai != null)
             {
                 OrderHienTai = new Order()
@@ -78,7 +78,6 @@ namespace BaiTapApi.Services
                     OrderStatusId = order.OrderStatusId,
                     update_at = DateTime.Now
                 };
-                
                 dbContext.Update(OrderHienTai);
                 dbContext.SaveChanges();
                 return ErrorHelper.ThanhCong;
@@ -106,7 +105,7 @@ namespace BaiTapApi.Services
                 address = order.address,
                 OrderStatusId = order.OrderStatusId,
                 created_at = DateTime.Now,
-                update_at = DateTime.Now,
+                update_at = DateTime.Now
             };
             if (dbContext.User.FirstOrDefault(x => x.UserId == newOrder.UserId) == null)
             {

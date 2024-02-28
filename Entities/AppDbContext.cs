@@ -13,7 +13,7 @@ namespace BaiTapApi.Entities
         public virtual DbSet<Account> Account { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server = DESKTOP-UCD9BPR\\SQLEXPRESS ; Database = BaiTapCuoiKhoa_API ; Trusted_Connection = True; TrustServerCertificate = True");
+            optionsBuilder.UseSqlServer("Server = DUYNGUYEN\\SQLEXPRESS ; Database = QlSanPhamBan ; Trusted_Connection = True; TrustServerCertificate = True");
         }
     }
 }

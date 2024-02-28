@@ -3944,9 +3944,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HocLTS\\BaiTapApi\\BaiTapApi\\THucTapBE.csproj",
-      "projectName": "THucTapBE",
-      "projectPath": "F:\\HocLTS\\BaiTapApi\\BaiTapApi\\THucTapBE.csproj",
+      "projectUniqueName": "F:\\HocLTS\\BaiTapApi\\BaiTapApi\\BaiTapApi.csproj",
+      "projectName": "BaiTapApi",
+      "projectPath": "F:\\HocLTS\\BaiTapApi\\BaiTapApi\\BaiTapApi.csproj",
       "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
       "outputPath": "F:\\HocLTS\\BaiTapApi\\BaiTapApi\\obj\\",
       "projectStyle": "PackageReference",
